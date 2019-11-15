@@ -1,0 +1,69 @@
+@mixin make-circles {
+  border-radius: 50%;
+}
+
+@mixin width-height {
+  width: 212px;
+  height: 159px;
+}
+
+.icon-wrapper {
+  width: 68%;
+  margin: 100px auto 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  .never,
+  .ocassionally,
+  .hours,
+  .yearly {
+    @include width-height();
+    background: #ffff;
+    margin: 10px;
+    border-radius: 51%;
+    transition: width 0.6s, height 0.6s;
+    @media screen and (min-width: 320px) and (max-width: 484px) {
+      display: flex;
+      flex-flow: column nowrap;
+      margin: 5px;
+      width: 50px;
+      height: 50px;
+      pointer-events:none;
+    }
+   
+    &:hover {
+      width: 246px;
+      height: 178px;
+    }
+  }
+
+  img {
+    width: 58px;
+    height: 56px;
+    margin: 38px auto 0;
+    transition: width 0.7s, height 0.7s;
+    @media screen and (min-width: 320px) and (max-width: 484px) {
+      width: 25px;
+      height: 28px;
+      margin: 11px;
+    }
+    &:hover {
+      width: 70px;
+      height: 65px;
+    }
+  }
+  p {
+    color: #cc0000;
+    font-weight: 800;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    transition: 0.7s;
+    @media screen and (min-width: 320px) and (max-width: 484px){
+        font-size:10px;
+    }
+    &:hover {
+      font-size: 17px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<div class="custom-slider">
+    <ng5-slider [(value)]="value" [(highValue)]="hightValue" [options]="options"></ng5-slider>
+</div>
+
+<div class="rle">
+        <div class="pos1" (click)="changePosition(0)"></div>
+        <div class="pos2" (click)="changePosition(33)"></div>
+        <div class="pos3" (click)="changePosition(66)"></div>
+</div>  
+
+<div class="relevence">
+    <div class="less-relevant">LESS RELEVANT</div>
+    <div class="relevant">RELEVANT</div>
+    <div class="very-relevant">VERY RELEVANT</div>
+</div>
+
+<div class="try-again" (click)='backToOriginalPosition()'>
+    <p>TRY AGAIN <span class="angle-right"><i class="fa fa-angle-right"></i></span></p>
+</div>
