@@ -20,6 +20,11 @@ export class RangeBarComponent implements OnInit {
     showTicks: false
   };
 
+  lessRelevant = 'LESS RELEVANT';
+  relevant = 'RELEVANT';
+  veryRelevant = 'VERY RELEVANT';
+  tryAgain = 'TRY AGAIN';
+
   ngOnInit() {
   }
 

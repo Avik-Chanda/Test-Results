@@ -9,6 +9,16 @@ export class TimeIconsComponent implements OnInit {
 
   constructor() { }
 
+  Never = 'Never';
+  Ocassionally = 'Ocassionally';
+  Hours = '4 Hours';
+  Yearly = 'Yearly';
+
+
+  private newMethod() {
+    return "Yearly";
+  }
+
   ngOnInit() {
   }
 
